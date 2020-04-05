@@ -1,0 +1,29 @@
+html {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+main > article > h2 {
+    font-size: 1.6rem;
+}
+
+ul.buttons{
+    display: none;
+}
+
+footer>a{
+    display: none;
+}
+
+footer>img{
+    display: none;
+}

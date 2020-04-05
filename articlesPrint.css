@@ -1,0 +1,45 @@
+html {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+section> h2 {
+    font-size: 1.6rem;
+}
+
+
+ul.ar1ul,ul.ar2ul,ul.ar3ul{
+    list-style-type: none;
+    /*text-decoration: none;*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 125%;
+}
+
+ul.buttons{
+    display: none;
+}
+
+footer>a{
+    display: none;
+}
+
+footer>p>img{
+    display: none;
+}

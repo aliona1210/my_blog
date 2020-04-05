@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS_Screen/articles.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../PrintsFile/articlesPrint.css" media="print"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body><div class = "text">
+
+    <header><h1>PSYCHOLOGY BLOG</h1></header>
+
+    <nav id="hlmenu">
+        <ul class="buttons">
+            <li ><a href="http://localhost:63342/WEBSTORM_PROJECT/html_blog/contact.html?_ijt=48k6p76r87931uulgbshrts4e5">Contact</a></li>
+            <li><a href="http://localhost:63342/WEBSTORM_PROJECT/html_blog/articles.html">Articles</a></li>
+            <li><a href="http://localhost:63342/WEBSTORM_PROJECT/html_blog/Me.html">Me</a></li>
+        </ul>
+    </nav>
+
+    <section>
+<h2 class="content">Content</h2>
+
+<div class="ar1">
+    <a class="ar1name" href="http://localhost:63342/WEBSTORM_PROJECT/html_blog/article1.html"> How thoughts affect reality, our lives, health and relationships</a>
+    <ul class="ar1ul">
+        <li >Our thougth and live</li>
+        <li >What do our thoughts influence?</li>
+        <li >Rules for changing thoughts </li>
+    </ul>
+</div>
+<div class="ar2">
+    <a class="ar2name" href="http://localhost:63342/WEBSTORM_PROJECT/html_blog/article2.html">Psychosomatic table</a>
+    <ul class="ar2ul">
+        <li>Psychosomatic table</li>
+    </ul>
+</div>
+
+<div class="ar3">
+    <a class="ar3name" href="http://localhost:63342/WEBSTORM_PROJECT/html_blog/article3.html">Posistive affirmations</a>
+    <ul class="ar3ul">
+        <li>4 example of positive affirmations</li>
+    </ul>
+</div>
+
+</section>
+</div>
+
+
+
+<article  id="artOpinions">
+    <h2 class="commentZone">Visitor Comments</h2>
+    <div id="opinionsContainer"></div>
+</article>
+
+    <article>
+        <h2 class="commentZone">Your feedback</h2>
+        <form id="commenting">
+            <label class="textNameLabel" for="name">Your name:</label>
+            <span class="name_usr">
+
+                <input  type="text" name="name" id="name" size="20" maxlength="10" title="max 10 symbols" required spellcheck="true" placeholder="Enter your name here" /><br/><br/>
+
+            </span>
+
+
+            <label class="textNameLabel" id="emai">Your email:</label>
+            <input  type="email" id="email" title="max symbols 30"
+                  pattern=".+@gmail.com" size="30" maxlength="30" required spellcheck="true" placeholder="Enter your gmail here"/><br /><br/>
+
+            <label class="textNameLabel" for="url">Enter URL your image:</label>
+            <input type="url" name="url" id="url"
+                   placeholder="https://example_my_image.com"
+                   pattern="https://.*" size="30"
+            /><br/><br/>
+
+
+
+            <p class="textNameLabel">Choose your gender:</p>
+
+                <input type="radio" id="male" name="gander" value="male" />
+                <label for="male">Male</label>
+
+
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+
+
+
+            <p class="textNameLabel">Choose the articles you read:</p>
+
+            <div>
+                <input type="checkbox" id="thoughts" name="thoughts">
+                <label for="thoughts">How thoughts affect reality</label>
+            </div>
+
+            <br>
+            <div>
+            <input type="checkbox" id="psychosomatic" name="psychosomatic">
+            <label for="psychosomatic">Psychosomatic</label>
+        </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="affirmations" name="affirmations">
+                <label for="affirmations">Affirmations</label>
+            </div>
+
+            <br>
+            <label class="textNameLabel" for="oppinion">Your opinion:</label>
+            <textarea name="comment" id="oppinion" cols="25" rows="3" lang="en" placeholder="Express your opinion here" required></textarea>
+
+            <br><br>
+
+            <label for="keyword">Choose word:</label>
+            <input list="words" id="keyword" name="keyword"  />
+
+            <datalist id="words">
+                <option value="Affirmations">
+                <option value="Reality">
+                <option value="Thought">
+                <option value="Psychosomatic">
+            </datalist>
+
+            <br><br>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </article>
+
+
+
+
+<script id="mTplOneOpinion" type="text/template">
+        <section>
+            <h3>{{name}} <i>{{createdDate}}</i></h3>
+            <p>{{mail}}</p>
+            <p>{{url}}</p>
+            <p>{{male}}</p>
+            <p>{{female}}</p>
+            <p>{{article1}}</p>
+            <p>{{article2}}</p>
+            <p>{{article3}}</p>
+            <p>{{keyWords}}</p>
+            <p>{{comment}}</p>
+        </section>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"
+        integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8="
+        crossorigin="anonymous">
+</script>
+
+
+<script src="../js/myBlogStorageHtmlMstch.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+html{
+    font-size: 100%;
+    font-family:  "Tw Cen MT", Arial, Helvetica, sans-serif;
+    font-style: normal; /*normal, italic, oblique (obl.-similar to italic*/
+    font-weight: normal; /*normal, bold*/
+    text-align: center; /*justify, left, right, center*/
+    color: black;
+}
+
+
+header {
+    text-align: center;
+    background-color: aqua;
+    border: none;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    width: 100%;
+}
+
+
+ul.buttons{
+    margin: 0;
+
+    background-color: #00D0FF ;
+    list-style-type: none;
+
+}
+
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1rem;
+
+}
+
+li a:hover {
+    background-color: #0E29DF ;
+}
+
+main{
+    background-color: #D2FDFF;
+}
+
+main>* {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin: 0;
+}
+.collage{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 600px) and (max-resolution: 1.8dppx) {
+    body{
+        min-width: 35rem;
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    ul.buttons{
+        padding: 0;
+    }
+
+    nav>li{
+        list-style-type: none;
+        display: flex;
+
+        flex-direction: row;
+    }
+
+    body>nav{
+        width: 7rem;
+        height: 5rem;
+    }
+
+
+}
+
+
+@media not all and (min-width: 600px) and (max-resolution: 1.8dppx){
+    body {
+        min-width: 16rem;
+        margin-left:auto;
+        margin-right: auto;
+        width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+    ul.buttons{
+        padding: 0;
+    }
+    nav > ul {
+        list-style: none;
+        display: flex;
+
+        flex-direction: row;
+    }
+    li{
+        flex-grow: 1; /*aby zabrali celu sirku*/
+    }
+
+}
+

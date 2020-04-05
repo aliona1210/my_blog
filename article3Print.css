@@ -1,0 +1,30 @@
+html {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+main >  h2 {
+    font-size: 1.6rem;
+}
+
+img{
+    filter: grayscale(100%);
+}
+
+ul.buttons{
+    display: none;
+}
+
+footer>a{
+    display: none;
+}
+
+footer>p>img{
+    display: none;
+}

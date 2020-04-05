@@ -1,0 +1,147 @@
+html{
+    font-size: 100%;
+    font-family:  "Tw Cen MT", Arial, Helvetica, sans-serif;
+    font-style: normal; /*normal, italic, oblique (obl.-similar to italic*/
+    font-weight: normal; /*normal, bold*/
+    text-align: center; /*justify, left, right, center*/
+    color: black;
+}
+
+
+header {
+    text-align: center;
+    background-color: aqua;
+    border: none;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+
+ul.buttons{
+    margin: 0;
+    background-color: #00D0FF ;
+    list-style-type: none;
+}
+
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1rem;
+
+}
+
+li a:hover {
+    background-color: #0E29DF ;
+}
+
+section {
+    background-color: #D2FDFF;
+    padding: 0.3rem;
+
+}
+
+section>  * {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+
+td, th {
+    border: 1px solid #000000 ;
+    text-align: left;
+    padding: 5px;
+}
+
+
+@media (min-width: 600px) and (max-resolution: 1.8dppx) {
+    body{
+        min-width: 35rem;
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul.buttons{
+        padding: 0;
+    }
+    nav>li{
+        list-style-type: none;
+        display: flex;
+
+        flex-direction: row;
+    }
+
+
+
+    body>nav{
+        width: 7rem;
+        height: 5rem;
+
+    }
+    body > footer {
+        width: 7rem;
+    }
+
+
+
+}
+@media not all and (min-width: 600px) and (max-resolution: 1.8dppx){
+    body {
+        min-width: 16rem;
+        margin:auto;
+        width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+    ul.buttons{
+        padding: 0;
+    }
+    nav > ul {
+        list-style: none;
+        display: flex;
+
+        flex-direction: row;
+    }
+    li.const {
+        flex-grow: 1; /*aby zabrali celu sirku*/
+    }
+
+
+    body > footer {
+        order: 1; /*aby bol posledny. Ostatne maju implicitne hodnotu 0, tzn. sa zobrazia podla poradia v html*/
+    }
+
+    table {
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+        border-right: 1px solid transparent;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+
+
